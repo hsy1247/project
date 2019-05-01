@@ -11,7 +11,13 @@
   <h1 id="ti"><a href="index.html">ESC</a></h1>
   <div id="grid">
     <ol>
-      <li><a href="1.html">리그오브레전드</a></li>
+      <li><a onclick="
+      fetch ('lol').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('#article').innerHTML = text;
+        })
+      });
+      ">리그오브레전드</a></li>
       <li><a href="2.html">하스스톤</a></li>
       <li><a href="3.html">오버워치</a></li>
     </ol>
