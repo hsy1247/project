@@ -11,27 +11,9 @@
   <h1 id="ti"><a href="index.html">ESC</a></h1>
   <div id="grid">
     <ol>
-      <li><a onclick="
-        fetch ('lol').then(function(response){
-          response.text().then(function(text){
-            document.querySelector('#article').innerHTML = text;
-          })
-        });
-      ">리그오브레전드</a></li>
-      <li><a onclick="
-        fetch ('hearthstone').then(function(response){
-          response.text().then(function(text){
-            document.querySelector('#article').innerHTML = text;
-          })
-        });
-      ">하스스톤</a></li>
-      <li><a onclick="
-        fetch ('overwatch').then(function(response){
-            response.text().then(function(text){
-              document.querySelector('#article').innerHTML = text;
-            })
-          });
-      ">오버워치</a></li>
+      <li><a onclick="fetchPage('lol')">리그오브레전드</a></li>
+      <li><a onclick="fetchPage('hearthston')">하스스톤</a></li>
+      <li><a onclick="fetchPage('overwatch')">오버워치</a></li>
     </ol>
     <div id="article">
       <h2>E-sports 일정</h2>
